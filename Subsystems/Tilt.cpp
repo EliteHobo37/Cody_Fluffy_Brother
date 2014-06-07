@@ -25,9 +25,9 @@ void Tilt::InitDefaultCommand() {
 // here. Call these from Commands.
 void Tilt::TiltUp()
 {
-	relay->Set(Relay::kReverse);
+	relay->Set(Relay::kForward);
 }
 void Tilt::TiltDown()
 {
-	relay->Set(Relay::kForward);
+	relay->Set(Relay::kReverse);
 }
