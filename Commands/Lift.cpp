@@ -18,7 +18,7 @@ Lift::Lift() {
 }
 // Called just before this Command runs the first time
 void Lift::Initialize() {
-	Robot::tilt ->TiltUp();
+	Robot::tilt->TiltUp();
 }
 // Called repeatedly when this Command is scheduled to run
 void Lift::Execute() {
