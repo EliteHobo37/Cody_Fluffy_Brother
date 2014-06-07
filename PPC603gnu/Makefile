@@ -31,8 +31,8 @@ else
 MODE_DIR := NonDebug
 endif
 OBJ_DIR := .
-WS_ROOT_DIR := C:/WindRiver/RobotBuilderWorkspace
-PRJ_ROOT_DIR := $(WS_ROOT_DIR)/Fluffy_Cody
+WS_ROOT_DIR := C:/WindRiver/FluffyBrother2014
+PRJ_ROOT_DIR := $(WS_ROOT_DIR)/Cody_Fluffy_Brother
 
 
 
@@ -117,71 +117,76 @@ CommandBasedRobotTemplate/$(MODE_DIR)/% : LIBPATH =
 CommandBasedRobotTemplate/$(MODE_DIR)/% : LIBS = 
 CommandBasedRobotTemplate/$(MODE_DIR)/% : OBJ_DIR := CommandBasedRobotTemplate/$(MODE_DIR)
 
-CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/AutonomousCommand.o : $(PRJ_ROOT_DIR)/Commands/AutonomousCommand.cpp $(FORCE_FILE_BUILD)
+CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/AutonomousCommand.o : $(PRJ_ROOT_DIR)/Commands/AutonomousCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/Close.o : $(PRJ_ROOT_DIR)/Commands/Close.cpp $(FORCE_FILE_BUILD)
+CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/Close.o : $(PRJ_ROOT_DIR)/Commands/Close.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/Lift.o : $(PRJ_ROOT_DIR)/Commands/Lift.cpp $(FORCE_FILE_BUILD)
+CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/Lift.o : $(PRJ_ROOT_DIR)/Commands/Lift.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/Lower.o : $(PRJ_ROOT_DIR)/Commands/Lower.cpp $(FORCE_FILE_BUILD)
+CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/Lower.o : $(PRJ_ROOT_DIR)/Commands/Lower.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/Open.o : $(PRJ_ROOT_DIR)/Commands/Open.cpp $(FORCE_FILE_BUILD)
+CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/Open.o : $(PRJ_ROOT_DIR)/Commands/Open.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/UseArcade.o : $(PRJ_ROOT_DIR)/Commands/UseArcade.cpp $(FORCE_FILE_BUILD)
+CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/StartCompressor.o : $(PRJ_ROOT_DIR)/Commands/StartCompressor.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/OI.o : $(PRJ_ROOT_DIR)/OI.cpp $(FORCE_FILE_BUILD)
+CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/UseArcade.o : $(PRJ_ROOT_DIR)/Commands/UseArcade.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Robot.o : $(PRJ_ROOT_DIR)/Robot.cpp $(FORCE_FILE_BUILD)
+CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/OI.o : $(PRJ_ROOT_DIR)/OI.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/RobotMap.o : $(PRJ_ROOT_DIR)/RobotMap.cpp $(FORCE_FILE_BUILD)
+CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Robot.o : $(PRJ_ROOT_DIR)/Robot.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Subsystems/Batterykiller.o : $(PRJ_ROOT_DIR)/Subsystems/Batterykiller.cpp $(FORCE_FILE_BUILD)
+CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/RobotMap.o : $(PRJ_ROOT_DIR)/RobotMap.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Subsystems/Drivetrain.o : $(PRJ_ROOT_DIR)/Subsystems/Drivetrain.cpp $(FORCE_FILE_BUILD)
+CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Subsystems/Batterykiller.o : $(PRJ_ROOT_DIR)/Subsystems/Batterykiller.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Subsystems/Pinch.o : $(PRJ_ROOT_DIR)/Subsystems/Pinch.cpp $(FORCE_FILE_BUILD)
+CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Subsystems/Drivetrain.o : $(PRJ_ROOT_DIR)/Subsystems/Drivetrain.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Subsystems/Tilt.o : $(PRJ_ROOT_DIR)/Subsystems/Tilt.cpp $(FORCE_FILE_BUILD)
+CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Subsystems/Pinch.o : $(PRJ_ROOT_DIR)/Subsystems/Pinch.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-OBJECTS_CommandBasedRobotTemplate = CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/AutonomousCommand.o \
-	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/Close.o \
-	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/Lift.o \
-	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/Lower.o \
-	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/Open.o \
-	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/UseArcade.o \
-	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/OI.o \
-	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Robot.o \
-	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/RobotMap.o \
-	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Subsystems/Batterykiller.o \
-	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Subsystems/Drivetrain.o \
-	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Subsystems/Pinch.o \
-	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Subsystems/Tilt.o
+CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Subsystems/Tilt.o : $(PRJ_ROOT_DIR)/Subsystems/Tilt.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
+OBJECTS_CommandBasedRobotTemplate = CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/AutonomousCommand.o \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/Close.o \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/Lift.o \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/Lower.o \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/Open.o \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/StartCompressor.o \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/UseArcade.o \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/OI.o \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Robot.o \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/RobotMap.o \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Subsystems/Batterykiller.o \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Subsystems/Drivetrain.o \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Subsystems/Pinch.o \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Subsystems/Tilt.o
 
 CommandBasedRobotTemplate/$(MODE_DIR)/CommandBasedRobotTemplate.out : $(OBJECTS_CommandBasedRobotTemplate)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@";rm -f "$@";nmppc $(OBJECTS_CommandBasedRobotTemplate) $(IDE_LIBRARIES) | tclsh $(WIND_BASE)/host/resource/hutils/tcl/munch.tcl -c ppc > $(OBJ_DIR)/ctdt.c; $(TOOL_PATH)ccppc $(DEBUGFLAGS_Linker) $(CC_ARCH_SPEC) -fdollars-in-identifiers -Wall $(ADDED_CFLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES)  -o $(OBJ_DIR)/ctdt.o -c $(OBJ_DIR)/ctdt.c; $(TOOL_PATH)ccppc -r -nostdlib -Wl,-X -T $(WIND_BASE)/target/h/tool/gnu/ldscripts/link.OUT -o "$@" $(OBJ_DIR)/ctdt.o $(OBJECTS_CommandBasedRobotTemplate) $(IDE_LIBRARIES) $(LIBPATH) $(LIBS)  $(ADDED_LIBPATH) $(ADDED_LIBS) && if [ "$(EXPAND_DBG)" = "1" ]; then plink "$@";fi
@@ -226,71 +231,76 @@ CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/% : LIBPATH =
 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/% : LIBS = 
 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/% : OBJ_DIR := CommandBassedRobotTemplate_partialImage/$(MODE_DIR)
 
-CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/AutonomousCommand.o : $(PRJ_ROOT_DIR)/Commands/AutonomousCommand.cpp $(FORCE_FILE_BUILD)
+CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/AutonomousCommand.o : $(PRJ_ROOT_DIR)/Commands/AutonomousCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/Close.o : $(PRJ_ROOT_DIR)/Commands/Close.cpp $(FORCE_FILE_BUILD)
+CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/Close.o : $(PRJ_ROOT_DIR)/Commands/Close.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/Lift.o : $(PRJ_ROOT_DIR)/Commands/Lift.cpp $(FORCE_FILE_BUILD)
+CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/Lift.o : $(PRJ_ROOT_DIR)/Commands/Lift.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/Lower.o : $(PRJ_ROOT_DIR)/Commands/Lower.cpp $(FORCE_FILE_BUILD)
+CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/Lower.o : $(PRJ_ROOT_DIR)/Commands/Lower.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/Open.o : $(PRJ_ROOT_DIR)/Commands/Open.cpp $(FORCE_FILE_BUILD)
+CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/Open.o : $(PRJ_ROOT_DIR)/Commands/Open.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/UseArcade.o : $(PRJ_ROOT_DIR)/Commands/UseArcade.cpp $(FORCE_FILE_BUILD)
+CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/StartCompressor.o : $(PRJ_ROOT_DIR)/Commands/StartCompressor.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/OI.o : $(PRJ_ROOT_DIR)/OI.cpp $(FORCE_FILE_BUILD)
+CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/UseArcade.o : $(PRJ_ROOT_DIR)/Commands/UseArcade.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Robot.o : $(PRJ_ROOT_DIR)/Robot.cpp $(FORCE_FILE_BUILD)
+CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/OI.o : $(PRJ_ROOT_DIR)/OI.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/RobotMap.o : $(PRJ_ROOT_DIR)/RobotMap.cpp $(FORCE_FILE_BUILD)
+CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Robot.o : $(PRJ_ROOT_DIR)/Robot.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Subsystems/Batterykiller.o : $(PRJ_ROOT_DIR)/Subsystems/Batterykiller.cpp $(FORCE_FILE_BUILD)
+CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/RobotMap.o : $(PRJ_ROOT_DIR)/RobotMap.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Subsystems/Drivetrain.o : $(PRJ_ROOT_DIR)/Subsystems/Drivetrain.cpp $(FORCE_FILE_BUILD)
+CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Subsystems/Batterykiller.o : $(PRJ_ROOT_DIR)/Subsystems/Batterykiller.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Subsystems/Pinch.o : $(PRJ_ROOT_DIR)/Subsystems/Pinch.cpp $(FORCE_FILE_BUILD)
+CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Subsystems/Drivetrain.o : $(PRJ_ROOT_DIR)/Subsystems/Drivetrain.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Subsystems/Tilt.o : $(PRJ_ROOT_DIR)/Subsystems/Tilt.cpp $(FORCE_FILE_BUILD)
+CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Subsystems/Pinch.o : $(PRJ_ROOT_DIR)/Subsystems/Pinch.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-OBJECTS_CommandBassedRobotTemplate_partialImage = CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/AutonomousCommand.o \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/Close.o \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/Lift.o \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/Lower.o \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/Open.o \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/UseArcade.o \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/OI.o \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Robot.o \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/RobotMap.o \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Subsystems/Batterykiller.o \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Subsystems/Drivetrain.o \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Subsystems/Pinch.o \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Subsystems/Tilt.o
+CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Subsystems/Tilt.o : $(PRJ_ROOT_DIR)/Subsystems/Tilt.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
+OBJECTS_CommandBassedRobotTemplate_partialImage = CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/AutonomousCommand.o \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/Close.o \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/Lift.o \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/Lower.o \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/Open.o \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/StartCompressor.o \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/UseArcade.o \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/OI.o \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Robot.o \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/RobotMap.o \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Subsystems/Batterykiller.o \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Subsystems/Drivetrain.o \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Subsystems/Pinch.o \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Subsystems/Tilt.o
 
 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/CommandBassedRobotTemplate_partialImage.o : $(OBJECTS_CommandBassedRobotTemplate_partialImage)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc -r -nostdlib -Wl,-X  -o "$@" $(OBJECTS_CommandBassedRobotTemplate_partialImage) $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS)  && if [ "$(EXPAND_DBG)" = "1" ]; then plink "$@";fi
@@ -304,15 +314,16 @@ CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/CommandBassedRobotTemplate_p
 
 force : 
 
-DEP_FILES := CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/AutonomousCommand.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/Close.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/Lift.d \
-	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/Lower.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/Open.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/UseArcade.d \
-	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/OI.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Robot.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/RobotMap.d \
-	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Subsystems/Batterykiller.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Subsystems/Drivetrain.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Subsystems/Pinch.d \
-	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Fluffy_Cody/Subsystems/Tilt.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/AutonomousCommand.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/Close.d \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/Lift.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/Lower.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/Open.d \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Commands/UseArcade.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/OI.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Robot.d \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/RobotMap.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Subsystems/Batterykiller.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Subsystems/Drivetrain.d \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Subsystems/Pinch.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Fluffy_Cody/Subsystems/Tilt.d
+DEP_FILES := CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/AutonomousCommand.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/Close.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/Lift.d \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/Lower.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/Open.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/StartCompressor.d \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/UseArcade.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/OI.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Robot.d \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/RobotMap.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Subsystems/Batterykiller.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Subsystems/Drivetrain.d \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Subsystems/Pinch.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Subsystems/Tilt.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/AutonomousCommand.d \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/Close.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/Lift.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/Lower.d \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/Open.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/StartCompressor.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Commands/UseArcade.d \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/OI.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Robot.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/RobotMap.d \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Subsystems/Batterykiller.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Subsystems/Drivetrain.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Subsystems/Pinch.d \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Cody_Fluffy_Brother/Subsystems/Tilt.d
 -include $(DEP_FILES)
 
 
