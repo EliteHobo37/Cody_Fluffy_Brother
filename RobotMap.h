@@ -23,6 +23,8 @@ public:
 	static SpeedController* drivetrainLeft;
 	static SpeedController* drivetrainRight;
 	static RobotDrive* drivetrainDrive;
+	static Encoder* drivetrainLEncoder;
+	static Encoder* drivetrainREncoder;
 	static Relay* pinchRelay;
 	static Relay* tiltRelay;
 	static Compressor* batterykillerNoisy;

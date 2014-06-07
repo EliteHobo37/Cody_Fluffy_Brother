@@ -14,6 +14,8 @@ Gyro* RobotMap::drivetrainGyro1 = NULL;
 SpeedController* RobotMap::drivetrainLeft = NULL;
 SpeedController* RobotMap::drivetrainRight = NULL;
 RobotDrive* RobotMap::drivetrainDrive = NULL;
+Encoder* RobotMap::drivetrainLEncoder = NULL;
+Encoder* RobotMap::drivetrainREncoder = NULL;
 Relay* RobotMap::pinchRelay = NULL;
 Relay* RobotMap::tiltRelay = NULL;
 Compressor* RobotMap::batterykillerNoisy = NULL;
@@ -36,7 +38,17 @@ void RobotMap::init() {
         drivetrainDrive->SetExpiration(0.1);
         drivetrainDrive->SetSensitivity(0.5);
         drivetrainDrive->SetMaxOutput(1.0);
-        
+        drivetrainDrive->SetInvertedMotor(RobotDrive::kRearRightMotor, true);        
+	drivetrainLEncoder = new Encoder(1, 2, 1, 3, false, Encoder::k4X);
+	lw->AddSensor("Drivetrain", "LEncoder", drivetrainLEncoder);
+	drivetrainLEncoder->SetDistancePerPulse(1.0);
+        drivetrainLEncoder->SetPIDSourceParameter(Encoder::kRate);
+        drivetrainLEncoder->Start();
+	drivetrainREncoder = new Encoder(1, 9, 1, 10, true, Encoder::k4X);
+	lw->AddSensor("Drivetrain", "REncoder", drivetrainREncoder);
+	drivetrainREncoder->SetDistancePerPulse(1.0);
+        drivetrainREncoder->SetPIDSourceParameter(Encoder::kRate);
+        drivetrainREncoder->Start();
 	pinchRelay = new Relay(1, 2);
 	lw->AddActuator("Pinch", "Relay", pinchRelay);
 	
