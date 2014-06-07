@@ -17,7 +17,7 @@ StartCompressor::StartCompressor() {
 }
 // Called just before this Command runs the first time
 void StartCompressor::Initialize() {
-	
+	Robot::batterykiller->StartNoisy();
 }
 // Called repeatedly when this Command is scheduled to run
 void StartCompressor::Execute() {
@@ -25,7 +25,7 @@ void StartCompressor::Execute() {
 }
 // Make this return true when this Command no longer needs to run execute()
 bool StartCompressor::IsFinished() {
-	return false;
+	return true;
 }
 // Called once after isFinished returns true
 void StartCompressor::End() {
